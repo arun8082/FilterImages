@@ -23,9 +23,9 @@
 					<c:forEach items="${map.value}" var="path">
 						<td><img src="images/${path}" height="200px" /></td>
 					</c:forEach>
-					<td><input type="checkbox" name="suspense" value="${map.key}"/><label>Suspense</label><br />
-						<input type="checkbox" name="different_images" value="${map.key}"/><label>Different Image</label><br />
-						<input type="checkbox" name="detection_failed" value="${map.key}"/><label>Detection Failed</label></td>
+					<td><input type="checkbox" name="suspense" value="${map.key}" id="s_${map.key}"/><label for="s_${map.key}">Suspense</label><br />
+						<input type="checkbox" name="different_images" value="${map.key}" id="di_${map.key}"/><label for="di_${map.key}">Different Image</label><br />
+						<input type="checkbox" name="detection_failed" value="${map.key}" id="df_${map.key}"/><label for="df_${map.key}">Detection Failed</label></td>
 				</tr>
 			</c:forEach>
 		</table>
